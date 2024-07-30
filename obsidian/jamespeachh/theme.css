@@ -1,17 +1,17 @@
-
+/* Jamespeachh Obsidian theme */
 :root
 {
-    --dark0_x:  46,52,64; /* #2e3440 */
+    --dark0_x:  45,42,46;
     --dark0:    rgb(var(--dark0_x));
-    --dark1_x:  59,66,82; /* #3b4252 */
+    --dark1_x:  40,32,34;
     --dark1:    rgb(var(--dark1_x));
-    --dark2_x:  67,76,94; /* #434c5e */
+    --dark2_x:  77,86,94;
     --dark2:    rgb(var(--dark2_x));
-    --dark3_x:  76,86,106; /* #4c566a */
+    --dark3_x:  57,66,74;
     --dark3:    rgb(var(--dark3_x));
 
     --light005: rgba(143,188,187, 70%);
-    --light0_x: 216,222,233; /* #d8dee9 */
+    --light0_x: 143,143,143; /* #d8dee9 */
     --light0:   rgb(var(--light0_x));
     --light1_x: 229,233,240; /* #e5e9f0 */
     --light1:   rgb(var(--light1_x));
@@ -33,16 +33,16 @@
     --red:      rgb(var(--red_x));
     --orange_x: 208,135,112; /* #d08770 */
     --orange:   rgb(var(--orange_x));
-    --yellow_x: 235,203,139; /* #ebcb8b */
+    --yellow_x: 195,163,129; /* #ebcb8b */
     --yellow:   rgb(var(--yellow_x));
-    --green_x:  163,190,140; /* #a3be8c */
+    --green_x:  153,155,90; /* #a3be8c */
     --green:    rgb(var(--green_x));
-    --purple_x: 180,142,173; /* #b48ead */
+    --purple_x: 180,132,183; /* #b48ead */
     --purple:   rgb(var(--purple_x));
 
-    --dark_table_inner: rgba(19,26,42);
-    --dark_table_outer: rgba(19,26,42);
-    --dark_table_thread: rgba(69,76,92);
+    --dark_table_inner: rgb(0, 0, 0);
+    --dark_table_outer: rgb(8, 9, 11);
+    --dark_table_thread: rgb(82, 95, 122);
 
     --light_table_inner: rgba(143,188,187);
     --light_table_outer: rgba(94,129,172);
@@ -86,6 +86,7 @@ body
 
 .theme-dark
 {
+    /* color palette */
     --color-red-rgb:                 var(--red_x);
     --color-red:                     var(--red);
     --color-purple-rgb:              var(--purple_x);
@@ -146,9 +147,9 @@ body
     --checkbox-border-color-hover:   var(--frost0);
     --checklist-done-color:          rgba(var(--light2_x), 0.5);
 
-    --table-header-background:       hsl(220, 16%, 16%);
+    --table-header-background:       hsl(0, 0%, 9%);
     --table-header-background-hover: var(--dark3);
-    --table-row-even-background:     hsl(220, 16%, 20%);
+    --table-row-even-background:     hsl(221, 20%, 19%);
     --table-row-odd-background:      hsl(220, 16%, 24%);
     --table-row-background-hover:    var(--dark3);
 
@@ -405,13 +406,13 @@ pre[class*="language-"]
     color: var(--text-accent-hover) !important;
 }
 
-/* Keep highlight/marks the same between viewer and editor. */
+/* Keep highlight/marks in viewer and editor. */
 .cm-highlight
 {
     color: var(--text-highlight-fg) !important;
 }
 
-/* Keep inline code the same between viewer and editor. */
+/* Keep inline code in viewer and editor */
 .cm-inline-code
 {
     border-radius: var(--radius-s);
@@ -442,34 +443,12 @@ pre[class*="language-"]
     color: var(--bold-color) !important;
 }
 
-/*
- * Keep list bullet padding the same between viewer and editor.
- * This is annoying with the cursor in the editor as there is a gap.
- */
-/*
-.cm-formatting-list
-{
-     padding-right: 4px !important;
-}
-*/
-
-/*
- * Keep sub-list indenting the same between viewer and editor.
- * This assumes --list-indent is default at 2em.
- */
-/*
-.cm-indent 
-{
-    text-indent: 1em !important;
-}
-*/
-
 .mermaid .note
 {
     fill: var(--mermaid-note) !important;
 }
 
-.mermaid .loopLine,
+.mermaid .loopLine
 {
     stroke: var(--mermaid-loopline) !important;
 }
@@ -554,7 +533,7 @@ pre[class*="language-"]
 {
     color: var(--red);
 }
-                                                       /* CSS */
+/* button CSS */
 .button
 {
        align-items: center;
