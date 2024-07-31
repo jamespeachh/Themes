@@ -7,7 +7,7 @@
     --dark1:    rgb(var(--dark1_x));
     --dark2_x:  77,86,94;
     --dark2:    rgb(var(--dark2_x));
-    --dark3_x:  57,66,74;
+    --dark3_x:  45,42,46;
     --dark3:    rgb(var(--dark3_x));
 
     --light005: rgba(143,188,187, 70%);
@@ -22,7 +22,7 @@
 
     --frost0_x: 143,188,187; /* #8fbcbb */
     --frost0:   rgb(var(--frost0_x));
-    --frost1_x: 136,192,208; /* #88c0d0 */
+    --frost1_x: 116,162,198; /* #88c0d0 */
     --frost1:   rgb(var(--frost1_x));
     --frost2_x: 129,161,193; /* #81a1c1 */
     --frost2:   rgb(var(--frost2_x));
@@ -182,7 +182,7 @@ body
     --calendar-today:                var(--yellow);
 
     --dataview-key:                  var(--text-faint);
-    --dataview-key-background:       rgba(var(--frost2_x), 0.3);
+    --dataview-key-background:       rgba(var(--frost2_x));
     --dataview-value:                var(--text-faint);
     --dataview-value-background:     rgba(var(--red_x), 0.3);
 
@@ -578,4 +578,17 @@ pre[class*="language-"]
     cursor: not-allowed;
     background: rgba(0, 0, 0, .08);
     color: rgba(0, 0, 0, .3);
+}
+
+
+.workspace-tab-header-container {
+    background-color: var(--table-header-background-hover);
+}
+
+body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left 
+{
+    --titlebar-background: var(--background-primary);
+}
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+    background-color: var(--background-primary);
 }
